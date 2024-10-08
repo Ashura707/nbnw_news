@@ -1,6 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
-
 const Footer = () => {
     return (
         <div className="bg-black text-white text-center py-10 px-5">
@@ -10,22 +7,21 @@ const Footer = () => {
                 <h1 className="text-2xl font-bold">NBNW</h1>
             </div>
 
-           
             <p className="text-xl mb-10">Explore the real news.</p>
 
-            {/* Social Media Icons */}
+            {/* Social Media Links */}
             <div className="social-icons mb-10 flex justify-center space-x-4">
-                <a href="https://www.facebook.com/nbnw_org" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faFacebook} size="2x" />
+                <a href="https://www.facebook.com/nbnw_org" target="_blank" rel="noopener noreferrer" className="text-lg">
+                    Facebook
                 </a>
-                <a href="https://www.instagram.com/nbnw_org/" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faInstagram} size="2x" />
+                <a href="https://www.instagram.com/nbnw_org/" target="_blank" rel="noopener noreferrer" className="text-lg">
+                    Instagram
                 </a>
-                <a href="https://www.linkedin.com/company/nbnw-org/" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                <a href="https://www.linkedin.com/company/nbnw-org/" target="_blank" rel="noopener noreferrer" className="text-lg">
+                    LinkedIn
                 </a>
-                <a href="https://twitter.com/nbnw_org" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faTwitter} size="2x" />
+                <a href="https://twitter.com/nbnw_org" target="_blank" rel="noopener noreferrer" className="text-lg">
+                    Twitter
                 </a>
             </div>
 
@@ -51,7 +47,6 @@ const Footer = () => {
                 </div>
             </div>
 
-          
             <p className="mt-10">&copy; 2024 NBNW, Inc. All rights reserved.</p>
         </div>
     );
