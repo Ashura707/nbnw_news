@@ -6,7 +6,7 @@ const Newsapp = () => {
   const [newsData, setNewsData] = useState([]); 
   const [filteredNews, setFilteredNews] = useState([]); 
   const [error, setError] = useState(''); 
-  const API_KEY = import.meta.env.VITE_API_KEY;
+  const API_KEY = "412100698bda4cce81c5cb1e7e76ac0d";
 
 
 
