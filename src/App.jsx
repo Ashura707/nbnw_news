@@ -6,13 +6,14 @@ const Newsapp = () => {
   const [newsData, setNewsData] = useState([]); 
   const [filteredNews, setFilteredNews] = useState([]); 
   const [error, setError] = useState(''); 
-  const API_KEY = import.meta.env.VITE_API_KEY;
+  // const API_KEY = import.meta.env.VITE_API_KEY;
 
 
 
   const getData = async () => {
     try {
-      const response = await fetch(`/api/v2/everything?q=${search || 'Tesla'}&apiKey=${API_KEY}`);
+      const response = await fetch(`http://localhost:5000/api/news?query=${search || 'Tesla'}`);
+
 
       
       
